@@ -3,8 +3,8 @@ project "GLFW"
 	language "C"
 	staticruntime "on"
 
-	targetdir ("bin/" .. outputdir .. "/%{prj.name}")
-	objdir ("bin-int/" .. outputdir .. "/%{prj.name}")
+	_3rd_party_location_dir()
+	set_output_dir()
 
 	files
 	{
